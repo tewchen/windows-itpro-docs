@@ -40,12 +40,12 @@ Following table has description for each field.
 
 | Property | Type | Description |
 |----------|------|-------------|
-| DisplayName | String | The display name of the rule. Does not need to be unique. |
+| Name | String | The display name of the rule. Does not need to be unique. |
 | Description | String | The description of the rule. |
-| PackageFamilyName | String | The package family name of a Microsoft Store application that's affected by the firewall rule. |
-| FilePath | String | The full file path of an app that's affected by the firewall rule. |
+| Application(s) - Package Family Name | String | The package family name of a Microsoft Store application that's affected by the firewall rule. |
+| Application(s) - File Path | String | The full file path of an app that's affected by the firewall rule. |
 | FullyQualifiedBinaryName | String | The fully qualified binary name. |
-| ServiceName | String | The name used in cases when a service, not an application, is sending or receiving traffic. |
+| Application(s) - Windows service | String | The name used in cases when a service, not an application, is sending or receiving traffic. |
 | Protocol | Nullable Integer - default value is null which maps to All | 0-255 number representing the [IP protocol](https://www.wikipedia.org/wiki/List_of_IP_protocol_numbers) (TCP = 6, UDP = 17).  If not specified, the default is All. |
 | LocalPortRanges | String array | List of local port ranges. For example, "100-120", "200", "300-320". If not specified, the default is All. |
 | RemotePortRanges | String array | List of remote port ranges. For example, "100-120", "200", "300-320". If not specified, the default is All. |
